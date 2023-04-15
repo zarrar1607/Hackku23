@@ -5,6 +5,7 @@ import docx
 from docx import Document
 from bs4 import BeautifulSoup
 import PyPDF2
+import io
 
 openai.organization = "org-gG6K1j8fah4HfsIk7JZEGNBO"
 openai.api_key = "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"
@@ -21,13 +22,13 @@ def out():
     # Get user input from form
     user_string = request.form['user_string']
     user_file = request.files['user_file']
-    print(user_file.read())
+    #print(io.TextIOWrapper(user_file.read()))
     # file_path = os.path.join(app.root_path, 'uploads', user_file.filename)
     # user_file.save(file_path)
     # file_path = "".join(file_path.split())
-    with open(TextIOWrapper(user_file.read()), 'rb') as f:
+    #with open(io.TextIOWrapper(user_file.read()), 'rb') as f:
         # Create a PDF reader object
-        reader = PyPDF2.PdfReader(f)
+    reader = PyPDF2.PdfReader(user_file)
 
     # Get the number of pages in the PDF file
     num_pages = len(reader.pages)
