@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 120%;
+    font-family: 'Lato', Helvetica, sans-serif;
+    color: #3d3d3d;
+    background: #ddd;
+  }
+  
+  .intro {
+    margin-top: 50px;
+    width: 100%;
+    border-top: 1px solid #7158e2;
+    padding-right: 20px;
+    padding: 2rem;
+    background: #fff;
+  }
+  
+  #post-result {
+    margin: 1rem auto 2rem;
+    padding: 1.5rem 3rem;
+    color: #fff;
+  }
+  #post-result.error {
+    background: #ff4d4d;
+  }
+  #post-result.success {
+    background: #32ff7e;
+  }
+  
+  .content {
+    display: block;
+    margin-top: 2rem;
+  }
+  .content form,
+  #post-result {
+    max-width: 20rem;
+    box-shadow: 0 0 4px -2px #686868;
+  }
+  .content form {
+    background: #fff;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 20rem;
+    background: #fff;
+  }
+  .content input {
+    outline: 0 none;
+  }
+  .content label,
+  .content input {
+    transition: all .1s ease-in-out;
+  }
+  .content input[data-input="submit"] {
+    display: block;
+    width: 100%;
+    border: 1px solid #7d5fff;
+    padding: .4rem 1rem;
+    border-radius: 2rem;
+    background: #7d5fff;
+    color: #fff;
+  }
+  .content input[data-input="submit"]:hover,
+  .content input[data-input="submit"]:focus {
+    background: #7158e2;
+  }
+  .content input[data-input="submit"][disabled] {
+    cursor: not-allowed;
+    background: #7d5fff;
+  }
+  .content input[data-input="submit"].error {
+    background: #ff4d4d;
+  }
+  .content input[data-input="submit"].success {
+    background: #32ff7e;;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-flow: column;
+    margin: 1.5em 0;
+      position: relative;
+      padding-top: 2rem;
+  }
+  .form-group:first-child {
+    margin-top: 0;
+  }
+  .form-group input:not([data-input="submit"]) {
+    width: 100%;
+      background: transparent;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #4b4b4b;
+    border-radius: 0;
+    margin-top: .2rem;
+    padding: .4rem 1rem;
+      z-index: 1;
+  }
+  .form-group input:hover,
+  .form-group input:focus {
+    border-color: #7d5fff;
+  }
+  .form-group input.error {
+    border-color: #ff4d4d;
+  }
+  .form-group input.success {
+    border-color: #32ff7e;
+  }
+  .form-group label {
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+  }
+  .form-group input:focus + label,
+  .form-group input[class] + label {
+      top: .5rem;
+  }
+  
+  #password-validation:empty,
+  #post-result:empty {
+    display: none;
+    border-color: #32ff7e;
+  }
+  
+  #password-validation:empty,
+  #post-result:empty{
+    display: none;
+  }
