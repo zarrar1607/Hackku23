@@ -8,8 +8,9 @@ import io
 import textract
 
 openai.organization = "org-gG6K1j8fah4HfsIk7JZEGNBO"
-# openai.api_key = "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"
-openai.api_key = "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"
+#openai.api_key = "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"
+#openai.api_key = "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"
+openai.api_key = "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"
 app = Flask(__name__)
 
 
