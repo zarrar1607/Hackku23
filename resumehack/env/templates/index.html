@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="style.css">
+=======
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <script src="{{url_for('static', filename='script.js')}}"></script> -->
+>>>>>>> 358439bd2f266ccf9d57ab930ef35903362d92ea
 </head>
 <body>
+
+    <!-- <div id="img-container">
+        <img src="{{url_for('static',filename='Jayhawk1.png')}}" alt="An image"/>
+      </div> -->
+
 <div class="header">
 
     <!--Content before waves-->
@@ -39,12 +49,21 @@
     <div class="content-flex">
         <div class="Upload-page">
             <div class="form">
+<<<<<<< HEAD
                 <h2>Upload resume and job link<br> Save Time Now!</h2>
                   <form class="register-form" action="http://127.0.0.1:5000/out" method="POST" enctype="multipart/form-data">
                     <label for="file">Upload Resume:</label>
                     <input type="file" id='user_file' name='user_file'>
                     <label for="string">Job link:</label>
                     <input type="text" id='user_string' name='user_string'>
+=======
+                <h2>Upload your resume to start building!</h1>
+                  <form class="register-form" action="./out" method="POST" enctype="multipart/form-data">
+                    <label for="file">Upload File:</label>
+                    <input type="file" id='user_file' name='user_file' required="True"><br><br>
+                    <label for="string">Add Job's link:</label>
+                    <input type="text" id='user_string' name='user_string' required="True"><br><br>
+>>>>>>> 358439bd2f266ccf9d57ab930ef35903362d92ea
                     <input type="submit" value="Submit">
                   </form>
             </div>

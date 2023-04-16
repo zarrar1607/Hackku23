@@ -1,6 +1,9 @@
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 358439bd2f266ccf9d57ab930ef35903362d92ea
 body {
   margin:0;
 }
@@ -229,4 +232,12 @@ p {
 
 .Upload-page{
   position: center;
+}
+
+#img-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 2px;
+  height: 2px;
 }
