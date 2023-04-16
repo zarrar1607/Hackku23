@@ -11,7 +11,7 @@ import textract
 openai.organization = "org-gG6K1j8fah4HfsIk7JZEGNBO"
 #openai.api_key = "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"
 #openai.api_key = "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"
-openai.api_key = "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"
+openai.api_key = "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"
 app = Flask(__name__)
 
 global resume_text

@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 <div class="header">
@@ -45,13 +44,11 @@
         <div class="Upload-page">
             <div class="form">
                 <h2>Download the file</h1>
-              <form class="FileDownload">
-                <a download="#>New Resume"> 
-                    <button>New Resume</button>
-                </a>
-                <a download="#>New Cover Letter"> 
-                    <button>New Cover Letter</button>
-                </a>"
+              <form class="FileDownload" action="./oresume" method="GET">
+                <input type="submit" value="Get New Resume">
+                </form>
+                <form class="FileDownload" action="./ocover" method="GET">
+                    <input type="submit" value="Get New Cover Letter">
                 </form>
             </div>
           </div>
@@ -59,4 +56,3 @@
     <!--Content ends-->
 </body>
 </html>
-
