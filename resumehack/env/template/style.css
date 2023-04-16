@@ -1,25 +1,18 @@
 
-
-
 body {
   margin:0;
 }
 
 h1 {
-  font-family: 'Roboto';
-  font-weight: bold;
-  font-size: 48px;
-  text-shadow: 2px 2px 2px #333333;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  margin-top: 20px;
-
+  font-family: 'Georgia', sans-serif;
+  font-weight:bold;
+  letter-spacing: 2px;
+  font-size:48px;
 }
 p {
-    font-family: 'Roboto', sans-serif;
-      margin-top: 10px;
+    font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
-    font-size:25px;
+    font-size:30px;
     font-style: italic;
     color: #ffffff;
 }
@@ -36,7 +29,7 @@ p {
 .inner-header {
   height:30vh;
   width:100%;
-  margin: -20px 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -54,7 +47,6 @@ p {
   margin-bottom:-7px; /*Fix for safari gap*/
   min-height:100px;
   max-height:150px;
-  margin-top:-50px;
 }
 
 .content {
@@ -112,45 +104,9 @@ p {
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .Upload-page {
-  max-width: 600px; /* set maximum width for the upload page container */
-  margin: 0 auto; /* center the container horizontally */
-  border: 1px solid #ddd; /* add a border */
-  padding: 20px; /* add some padding */
-  border: none;
-}
-
-.Upload-page h2 {
-  font-size: 28px; /* increase font size */
-  font-weight: bold; /* add bold style */
-  margin-bottom: 20px; /* add some space below the heading */
-}
-
-.Upload-page label {
-  font-size: 18px; /* increase font size */
-  display: block; /* display label as a block element */
-  margin-bottom: 10px; /* add some space below the label */
-}
-
-.Upload-page input[type="file"],
-.Upload-page input[type="text"] {
-  width: 100%; /* set input fields to take up full width */
-  padding: 10px; /* add some padding */
-  border: 1px solid #ccc; /* add a border */
-  border-radius: 5px; /* round the corners */
-  margin-bottom: 20px; /* add some space below the input field */
-}
-
-.Upload-page input[type="submit"] {
-  background-color: #4CAF50; /* add a background color */
-  color: white; /* set text color to white */
-  border: none; /* remove border */
-  padding: 10px 20px; /* add some padding */
-  border-radius: 5px; /* round the corners */
-  cursor: pointer; /* add a pointer cursor */
-}
-
-.Upload-page input[type="submit"]:hover {
-  background-color: #3e8e41; /* change background color on hover */
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
 }
 .form {
   position: relative;

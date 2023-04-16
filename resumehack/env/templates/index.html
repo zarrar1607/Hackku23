@@ -5,20 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="C:\Users\17854\Desktop\hack\Hackku23\resumehack\env\style.css">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="header">
 
     <!--Content before waves-->
     <div class="inner-header flex">
-    <h1>Personalize Resume</h1>
-    </div>
-    <div class="discription">
-        <p>
-            An inovative way to build your resume with the customization of job description.
-         </p>
+    <h1>Tailor Your Resume For Any Job</h1>
+
     </div>
     <!--Waves Container-->
     <div>
@@ -44,12 +39,12 @@
     <div class="content-flex">
         <div class="Upload-page">
             <div class="form">
-                <h2>Upload your resume to start building!</h1>
+                <h2>Upload resume and job link<br> Save Time Now!</h2>
                   <form class="register-form" action="http://127.0.0.1:5000/out" method="POST" enctype="multipart/form-data">
-                    <label for="file">Upload File:</label>
-                    <input type="file" id='user_file' name='user_file'><br><br>
-                    <label for="string">Add Job's link:</label>
-                    <input type="text" id='user_string' name='user_string'><br><br>
+                    <label for="file">Upload Resume:</label>
+                    <input type="file" id='user_file' name='user_file'>
+                    <label for="string">Job link:</label>
+                    <input type="text" id='user_string' name='user_string'>
                     <input type="submit" value="Submit">
                   </form>
             </div>
