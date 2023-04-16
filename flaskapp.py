@@ -5,6 +5,7 @@ import docx
 from bs4 import BeautifulSoup
 import PyPDF2
 import io
+import io
 
 openai.organization = "org-gG6K1j8fah4HfsIk7JZEGNBO"
 openai.api_key = "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"
@@ -21,7 +22,11 @@ def out():
     # Get user input from form
     user_string = request.form['user_string']
     user_file = request.files['user_file']
-
+    # print(io.TextIOWrapper(user_file.read()))
+    # file_path = os.path.join(app.root_path, 'uploads', user_file.filename)
+    # user_file.save(file_path)
+    # file_path = "".join(file_path.split())
+    # with open(io.TextIOWrapper(user_file.read()), 'rb') as f:
     # Create a PDF reader object
     reader = PyPDF2.PdfReader(user_file)
 
