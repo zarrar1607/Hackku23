@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PNG Image Move</title>
+    <style>
+      .container {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 2px;
+        height: 2px;
+        position: relative;
+  display: inline-block;
+      }
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class = "container">
+      <img src="jayhawk1.png" alt="An image"/>
+      <div class="overlay">
+
+    <script src="script.js"></script>
+  </body>
+</html>

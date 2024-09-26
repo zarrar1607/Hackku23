@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+    <h1>Tailor Your Resume For Any Job</h1>
+
+    </div>
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+    
+    <!--Content starts-->
+    <div class="content-flex">
+        <div class="Upload-page">
+            <div class="form">
+                <h2>Upload resume and job link<br> Save Time Now!</h2>
+                  <form class="register-form" action="http://127.0.0.1:5000/out" method="POST" enctype="multipart/form-data">
+                    <label for="file">Upload Resume:</label>
+                    <input type="file" id='user_file' name='user_file'>
+                    <label for="string">Job link:</label>
+                    <input type="text" id='user_string' name='user_string'>
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
+          </div>
+    </div>
+    <!--Content ends-->
+</body>
+</html>

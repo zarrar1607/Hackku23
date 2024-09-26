@@ -1,0 +1,232 @@
+
+
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 48px;
+  text-shadow: 2px 2px 2px #333333;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-top: 20px;
+
+}
+p {
+    font-family: 'Roboto', sans-serif;
+      margin-top: 10px;
+    letter-spacing: 1px;
+    font-size:25px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+}
+
+.inner-header {
+  height:30vh;
+  width:100%;
+  margin: -20px 0 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:10vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+  margin-top:-50px;
+}
+
+.content {
+  position:relative;
+  height:10vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:10vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.Upload-page {
+  max-width: 600px; /* set maximum width for the upload page container */
+  margin: 0 auto; /* center the container horizontally */
+  border: 1px solid #ddd; /* add a border */
+  padding: 20px; /* add some padding */
+  border: none;
+}
+
+.Upload-page h2 {
+  font-size: 28px; /* increase font size */
+  font-weight: bold; /* add bold style */
+  margin-bottom: 20px; /* add some space below the heading */
+}
+
+.Upload-page label {
+  font-size: 18px; /* increase font size */
+  display: block; /* display label as a block element */
+  margin-bottom: 10px; /* add some space below the label */
+}
+
+.Upload-page input[type="file"],
+.Upload-page input[type="text"] {
+  width: 100%; /* set input fields to take up full width */
+  padding: 10px; /* add some padding */
+  border: 1px solid #ccc; /* add a border */
+  border-radius: 5px; /* round the corners */
+  margin-bottom: 20px; /* add some space below the input field */
+}
+
+.Upload-page input[type="submit"] {
+  background-color: #4CAF50; /* add a background color */
+  color: white; /* set text color to white */
+  border: none; /* remove border */
+  padding: 10px 20px; /* add some padding */
+  border-radius: 5px; /* round the corners */
+  cursor: pointer; /* add a pointer cursor */
+}
+
+.Upload-page input[type="submit"]:hover {
+  background-color: #3e8e41; /* change background color on hover */
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #c1dae9;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #3259a0;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #1e221e;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #409ddb;
+  text-decoration: none;
+}
+
+.form .input-form {
+    display: none;
+  }
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.Upload-page{
+  position: center;
+}
